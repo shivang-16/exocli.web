@@ -33,6 +33,34 @@ const Index = () => {
         </div>
       </section>
 
+      {/* IDE and Installation Section */}
+      <section className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="space-y-6">
+          <h2 className="text-3xl font-bold">INSTALL VIA CLI</h2>
+          <p className="text-muted-foreground">
+            Get started with Exo CLI in seconds. Our command-line tool makes it easy to scaffold full-stack projects with all the features you need.
+          </p>
+          <CodeSnippet
+            code="$ apm install exo-cli-syntax"
+            className="mb-4"
+          />
+          <a
+            href="#download"
+            className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
+            DOWNLOAD
+          </a>
+        </div>
+        <div className="relative rounded-lg overflow-hidden shadow-2xl">
+          <img
+            src="/lovable-uploads/ec11926c-a627-45e7-81b5-d9137119668a.png"
+            alt="Code IDE Screenshot"
+            className="w-full h-auto"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none" />
+        </div>
+      </section>
+
       {/* Features Section */}
       <section id="features" className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">Features</h2>
