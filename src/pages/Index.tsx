@@ -25,7 +25,7 @@ const Index = () => {
             Learn More
           </a>
           <a
-            href="#docs"
+            href="/docs"
             className="px-6 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
           >
             Documentation
@@ -102,7 +102,7 @@ npm run dev"
           />
           <p className="text-center text-muted-foreground">
             Visit our{" "}
-            <a href="#" className="text-primary hover:underline">
+            <a href="/docs" className="text-primary hover:underline">
               documentation
             </a>{" "}
             for more examples and guides.
