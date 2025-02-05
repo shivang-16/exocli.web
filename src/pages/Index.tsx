@@ -4,7 +4,7 @@ import { FeatureCard } from '@/components/FeatureCard';
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-mono">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-24 flex flex-col items-center text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -36,8 +36,8 @@ const Index = () => {
       {/* IDE and Installation Section */}
       <section className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
-          <h2 className="text-3xl font-bold">INSTALL VIA CLI</h2>
-          <p className="text-muted-foreground">
+          <h2 className="text-3xl font-bold text-primary">INSTALL VIA CLI</h2>
+          <p className="text-muted-foreground text-lg leading-relaxed">
             Get started with Exo CLI in seconds. Our command-line tool makes it easy to scaffold full-stack projects with all the features you need.
           </p>
           <CodeSnippet
@@ -46,7 +46,7 @@ const Index = () => {
           />
           <a
             href="#download"
-            className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-bold uppercase"
           >
             DOWNLOAD
           </a>
