@@ -1,6 +1,7 @@
 import { Zap, Box, Lock, Mail } from 'lucide-react';
 import { CodeSnippet } from '@/components/CodeSnippet';
 import { FeatureCard } from '@/components/FeatureCard';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
@@ -47,12 +48,12 @@ const Index = () => {
             code="$ npm install -g exo"
             className="mb-4 pr-12 inline-block"
           />
-          <a
-            href="#download"
-            className="block w-fit px-8 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-bold uppercase"
+          <Link
+            to="/docs"
+            className="block w-fit px-6 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-bold uppercase"
           >
-            DOWNLOAD
-          </a>
+            Docs
+          </Link>
         </div>
         <div className="relative rounded-sm overflow-hidden shadow-2xl">
           <img
@@ -96,18 +97,15 @@ const Index = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Quick Start</h2>
         <div className="max-w-2xl mx-auto space-y-6">
           <CodeSnippet
-            code="# Create a new project
-exo create my-app
+            code={`exo create express --name my-app --typescript
 cd my-app
-
-# Start development server
-npm run dev"
+npm run dev`}
           />
           <p className="text-center text-muted-foreground">
             Visit our{" "}
-            <a href="/docs" className="text-primary hover:underline">
+            <Link to="/docs" className="text-primary hover:underline">
               documentation
-            </a>{" "}
+            </Link>{" "}
             for more examples and guides.
           </p>
         </div>
