@@ -10,10 +10,13 @@ const Index = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           Exo CLI
         </h1>
-        <p className="typing-demo text-xl md:text-2xl mb-8 text-muted-foreground">
-          Full-stack projects in seconds
-        </p>
-        <CodeSnippet
+        <p className="text-md md:text-md mb-8 text-muted-foreground">
+  {"<!----"} Full-stack projects in seconds. <br />
+  Launch secure, scalable apps with built-in features at the click of a command  <br /> 
+  and accelerate your development workflow {"----!>"}
+</p>
+
+        {/* <CodeSnippet
           code="npm install -g exo-cli"
           className="mb-8 max-w-lg mx-auto"
         />
@@ -30,34 +33,34 @@ const Index = () => {
           >
             Documentation
           </a>
-        </div>
+        </div> */}
       </section>
 
       {/* IDE and Installation Section */}
       <section className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
           <h2 className="text-3xl font-bold text-primary">INSTALL VIA CLI</h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            Get started with Exo CLI in seconds. Our command-line tool makes it easy to scaffold full-stack projects with all the features you need.
+          <p className="text-muted-foreground text-sm leading-relaxed w-3/4">
+            Get started with exo in seconds. Our command-line tool makes it easy to scaffold full-stack projects with all the features you need.
           </p>
           <CodeSnippet
-            code="$ apm install exo-cli-syntax"
-            className="mb-4"
+            code="$ npm install -g exo"
+            className="mb-4 pr-12 inline-block"
           />
           <a
             href="#download"
-            className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-bold uppercase"
+            className="block w-fit px-8 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-bold uppercase"
           >
             DOWNLOAD
           </a>
         </div>
-        <div className="relative rounded-lg overflow-hidden shadow-2xl">
+        <div className="relative rounded-sm overflow-hidden shadow-2xl">
           <img
-            src="/lovable-uploads/ec11926c-a627-45e7-81b5-d9137119668a.png"
+            src="/lovable-uploads/ide.png"
             alt="Code IDE Screenshot"
-            className="w-full h-auto"
+            className="w-full h-auto rounded-sm"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none rounded-xl" />
         </div>
       </section>
 
